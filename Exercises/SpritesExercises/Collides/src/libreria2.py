@@ -1,12 +1,17 @@
 import pygame
 from math import cos, sin, radians
 import copy
-
+# CONSTANTS
+# COLORS
+BLANCO = (255, 255, 255)
 ROJO = (255, 0, 0)
 VERDE = (0, 255, 0)
 AZUL = (0, 0, 255)
 BLANCO = (255, 255, 255)
 NEGRO = (0, 0, 0)
+
+ANCHO = 600
+ALTO = 400
 
 
 class Plano(object):
@@ -104,6 +109,9 @@ def rotarPoligono(pto_list, an):
     return pto_list2
 
 
+def Triangulo():
+    pass
+
 class Polar(Plano):
 
     def Polar(self, r, angulo):
@@ -117,14 +125,14 @@ class Polar(Plano):
         Sobre Escritura de Metodo
         """
         np = self.Polar(r, an)
-        pygame.draw.circle(self.p, ROJO, self.Cart(np), 2)
+        pygame.draw.circle(self.p, ROJO, self.cart(np), 2)
 
     def Puntor(self, r, an):
         """
         Sobre Escritura de Metodo
         """
         np = self.Polar(r, an)
-        pygame.draw.circle(self.p, ROJO, self.Cart(np), 2)
+        pygame.draw.circle(self.p, ROJO, self.cart(np), 2)
 
     def Recta(self, r, ang):
         np = self.Polar(r, ang)

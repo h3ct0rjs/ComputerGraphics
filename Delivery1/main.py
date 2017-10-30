@@ -3,7 +3,6 @@ from src.core import *
 
 def main():
     logic()
-
 if __name__ == '__main__':
     banner()
     print('\n{}Iniciando Simulacion Grafica'.format(ok))

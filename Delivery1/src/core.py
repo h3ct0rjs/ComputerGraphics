@@ -4,7 +4,6 @@ from copy import deepcopy
 
 ALTO = 500
 ANCHO = 500
-
 ROJO = (255, 0, 0)
 BLANCO = (255, 255, 255)
 AZUL = (0, 0, 255)

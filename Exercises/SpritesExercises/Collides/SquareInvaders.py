@@ -1,16 +1,6 @@
 import pygame
 import random
-
-BLANCO = (255, 255, 255)
-VERDE = (0, 255, 0)
-AZUL = (0, 0, 255)
-BLANCO = (255, 255, 255)
-NEGRO = (0, 0, 0)
-
-
-ANCHO = 600
-ALTO = 400
-
+from src.libreria2 import *
 
 class Player(pygame.sprite.Sprite):
 
@@ -64,8 +54,7 @@ def main():
     pygame.init()
     pantalla = pygame.display.set_mode([ANCHO, ALTO])
     pantalla.fill(BLANCO)
-    pygame.display.set_caption('Invaders ')
-
+    pygame.display.set_caption('Square Invaders')
     jugador = Player(50, 70)
     general = pygame.sprite.Group()
     general.add(jugador)
@@ -102,7 +91,6 @@ def main():
         ls_col = pygame.sprite.spritecollide(jugador, rivales, True)
         for i in ls_col:
             ptos += 1
-            print(ptos)
         if ptos < 0:
             fin_juego = True
 
