@@ -1,5 +1,6 @@
 # Exam 2, Computer Graphics 2017 UTP
-[![Python](https://www.python.org/static/community_logos/python-powered-w-100x40.png)](https://www.python.org/) [![HacktoberFest](https://hacktoberfestchecker.herokuapp.com/img/favicon.ico)](https://hacktoberfest.digitalocean.com/)
+![Pacman](https://i.imgur.com/kijwxH0.gif)
+
 Implement in python code with the pygame library a game that meets the following conditions:
 
 ![](static/web-lisnovski-cherry.gif)
